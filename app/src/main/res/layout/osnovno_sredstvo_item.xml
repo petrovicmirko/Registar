@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:strokeColor="@color/card_border"
+    app:strokeWidth="@dimen/stroke_width">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:background="@color/card">
+
+        <ImageView
+            android:id="@+id/iv_slika_osnovnog_sredstva"
+            android:layout_width="@dimen/os_image_size"
+            android:layout_height="@dimen/os_image_size"
+            android:scaleType="centerCrop"
+            android:background="@drawable/frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_naziv_osnovnog_sredstva"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_bigger"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textSize"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@id/iv_slika_osnovnog_sredstva"
+            app:layout_constraintTop_toTopOf="@id/iv_slika_osnovnog_sredstva"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_cijena_osnovnog_sredstva"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_bigger"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textSize"
+            app:layout_constraintStart_toEndOf="@id/iv_slika_osnovnog_sredstva"
+            app:layout_constraintTop_toBottomOf="@id/tv_naziv_osnovnog_sredstva"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_osnovno_sredstvo_vise"
+            style="@style/CustomButtonVise"
+            android:text="@string/vise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_slika_osnovnog_sredstva"
+            app:strokeColor="@color/primary_dark"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/default_padding"
+        tools:context=".ui.dodavanje.stavka.DodajStavkuFragment">
+
+        <ImageView
+            android:id="@+id/iv_icon_barkod_stavka"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/barcode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_barkod_stavka"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_barkod_stavka"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_barkod_stavka"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_trenutna_osoba"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_barkod_stavka"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_trenutna_osoba"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_trenutna_osoba"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_trenutna_osoba"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_trenutna_lokacija"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_trenutna_osoba"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_trenutna_lokacija"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_trenutna_lokacija"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_trenutna_lokacija"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <Spinner
+            android:id="@+id/spinner_nova_zaduzena_osoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:minHeight="@dimen/minHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_trenutna_lokacija" />
+
+        <Spinner
+            android:id="@+id/spinner_nova_lokacija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:minHeight="@dimen/minHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_nova_zaduzena_osoba"/>
+
+        <Button
+            android:id="@+id/btn_sacuvaj_stavku"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/minHeight"
+            style="@style/CustomButtonSacuvaj"
+            android:text="@string/sacuvaj"
+            android:layout_marginTop="@dimen/btn_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_nova_lokacija"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

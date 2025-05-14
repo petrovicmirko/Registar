@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_padding"
+        tools:context=".ui.detalji.osnovno_sredstvo.DetaljiOsnovnogSredstvaFragment">
+
+        <ImageView
+            android:id="@+id/iv_slika_detalji_os"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:scaleType="fitCenter"
+            android:background="@drawable/border_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <TextView
+            android:id="@+id/tv_naziv_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_slika_detalji_os"
+            app:layout_constraintBottom_toTopOf="@id/tv_opis_detalji_os" />
+
+        <TextView
+            android:id="@+id/tv_opis_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_naziv_detalji_os"
+            app:layout_constraintBottom_toTopOf="@id/tv_barkod_detalji_os" />
+
+        <ImageView
+            android:id="@+id/iv_icon_barkod"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/barcode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_opis_detalji_os"
+            android:layout_marginTop="@dimen/margin_bigger" />
+
+        <TextView
+            android:id="@+id/tv_barkod_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_barkod"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_barkod"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_barkod"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_cijena"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_barkod_detalji_os"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_cijena_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_cijena"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_cijena"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_cijena"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_datum"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cijena_detalji_os"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_datum_kreiranja_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_datum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_datum"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_datum"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_zaposleni"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_datum_kreiranja_detalji_os"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_zaposleni_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_zaposleni"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_zaposleni"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_zaposleni"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_icon_lokacija"
+            android:layout_width="@dimen/small_icons_size"
+            android:layout_height="@dimen/small_icons_size"
+            android:src="@drawable/location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_zaposleni_detalji_os"
+            android:layout_marginTop="@dimen/small_icons_marginTop" />
+
+        <TextView
+            android:id="@+id/tv_lokacija_detalji_os"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_lokacija"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_lokacija"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_lokacija"
+            android:layout_marginStart="@dimen/default_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_mapa_detalji_os"
+            style="@style/CustomButtonSacuvaj"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/prikazi_na_mapi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_lokacija_detalji_os"
+            android:layout_marginTop="@dimen/btn_marginTop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

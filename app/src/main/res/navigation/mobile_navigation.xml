@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_osnovna_sredstva">
+    <fragment
+        android:id="@+id/nav_osnovna_sredstva"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.osnovna_sredstva.OsnovnaSredstvaFragment"
+        android:label="@string/menu_osnovna_sredstva"
+        tools:layout="@layout/fragment_osnovna_sredstva">
+        <action
+            android:id="@+id/action_nav_osnovna_sredstva_to_nav_dodaj_osnovno_sredstvo"
+            app:destination="@id/nav_dodaj_osnovno_sredstvo" />
+        <action
+            android:id="@+id/action_nav_osnovna_sredstva_to_nav_detalji_osnovnog_sredstva"
+            app:destination="@id/nav_detalji_osnovnog_sredstva" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_zaposleni"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.zaposleni.ZaposleniFragment"
+        android:label="@string/menu_zaposleni"
+        tools:layout="@layout/fragment_zaposleni">
+        <action
+            android:id="@+id/action_nav_zaposleni_to_nav_dodaj_zaposlenog"
+            app:destination="@id/nav_dodaj_zaposlenog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lokacije"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.lokacije.LokacijeFragment"
+        android:label="@string/menu_lokacije"
+        tools:layout="@layout/fragment_lokacije">
+        <action
+            android:id="@+id/action_nav_lokacije_to_nav_dodaj_lokaciju"
+            app:destination="@id/nav_dodaj_lokaciju" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_popisne_liste"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.popisne_liste.PopisneListeFragment"
+        android:label="@string/menu_popisne_liste"
+        tools:layout="@layout/fragment_popisne_liste">
+        <action
+            android:id="@+id/action_nav_popisne_liste_to_nav_dodaj_popisnu_listu"
+            app:destination="@id/nav_dodaj_popisnu_listu" />
+        <action
+            android:id="@+id/action_nav_popisne_liste_to_nav_stavke"
+            app:destination="@id/nav_stavke" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dodaj_osnovno_sredstvo"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.dodavanje.osnovno_sredstvo.DodajOsnovnoSredstvoFragment"
+        android:label="@string/menu_osnovna_sredstva"
+        tools:layout="@layout/fragment_dodaj_osnovno_sredstvo">
+        <action
+            android:id="@+id/action_nav_dodaj_osnovno_sredstvo_to_nav_osnovna_sredstva"
+            app:destination="@id/nav_osnovna_sredstva" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dodaj_lokaciju"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.dodavanje.lokacija.DodajLokacijuFragment"
+        android:label="@string/menu_lokacije"
+        tools:layout="@layout/fragment_dodaj_lokaciju" >
+        <action
+            android:id="@+id/action_nav_dodaj_lokaciju_to_nav_lokacije"
+            app:destination="@id/nav_lokacije" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dodaj_zaposlenog"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.dodavanje.zaposleni.DodajZaposlenogFragment"
+        android:label="@string/menu_zaposleni"
+        tools:layout="@layout/fragment_dodaj_zaposlenog" >
+        <action
+            android:id="@+id/action_nav_dodaj_zaposlenog_to_nav_zaposleni"
+            app:destination="@id/nav_zaposleni" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dodaj_popisnu_listu"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.dodavanje.popisne_liste.DodajPopisnuListuFragment"
+        android:label="@string/menu_popisne_liste"
+        tools:layout="@layout/fragment_dodaj_popisnu_listu" >
+        <action
+            android:id="@+id/action_nav_dodaj_popisnu_listu_to_nav_popisne_liste"
+            app:destination="@id/nav_popisne_liste" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detalji_osnovnog_sredstva"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.detalji.osnovno_sredstvo.DetaljiOsnovnogSredstvaFragment"
+        android:label="@string/fragment_detalji_os"
+        tools:layout="@layout/fragment_detalji_osnovnog_sredstva" >
+        <action
+            android:id="@+id/action_nav_detalji_osnovnog_sredstva_to_nav_mapa"
+            app:destination="@id/nav_mapa" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.mapa.MapaFragment"
+        android:label="@string/fragment_mapa"
+        tools:layout="@layout/fragment_mapa" >
+        <action
+            android:id="@+id/action_nav_mapa_to_nav_detalji_osnovnog_sredstva"
+            app:destination="@id/nav_detalji_osnovnog_sredstva" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_stavke"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.stavka.StavkeFragment"
+        android:label="@string/fragment_stavke"
+        tools:layout="@layout/fragment_stavke" >
+        <action
+            android:id="@+id/action_nav_stavke_to_nav_popisne_liste"
+            app:destination="@id/nav_popisne_liste" />
+        <action
+            android:id="@+id/action_nav_stavke_to_nav_dodaj_stavku"
+            app:destination="@id/nav_dodaj_stavku" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_dodaj_stavku"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.dodavanje.stavka.DodajStavkuFragment"
+        android:label="@string/fragment_stavke"
+        tools:layout="@layout/fragment_dodaj_stavku" >
+        <action
+            android:id="@+id/action_nav_dodaj_stavku_to_nav_stavke"
+            app:destination="@id/nav_stavke" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_podesavanja"
+        android:name="org.unibl.etf.mr_projektni_zadatak.ui.podesavanja.PodesavanjaFragment"
+        android:label="@string/menu_podesavanja"
+        tools:layout="@layout/fragment_podesavanja" >
+    </fragment>
+</navigation>

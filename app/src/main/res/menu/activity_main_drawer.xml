@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_osnovna_sredstva"
+            android:icon="@drawable/ic_osnovna_sredstva"
+            android:title="@string/menu_osnovna_sredstva"/>
+        <item
+            android:id="@+id/nav_zaposleni"
+            android:icon="@drawable/ic_zaposleni"
+            android:title="@string/menu_zaposleni"/>
+        <item
+            android:id="@+id/nav_lokacije"
+            android:icon="@drawable/ic_lokacije"
+            android:title="@string/menu_lokacije"/>
+        <item
+            android:id="@+id/nav_popisne_liste"
+            android:icon="@drawable/ic_popisne_liste"
+            android:title="@string/menu_popisne_liste"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_podesavanja"
+            android:icon="@drawable/ic_podesavanja"
+            android:title="@string/menu_podesavanja"/>
+    </group>
+</menu>

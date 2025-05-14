@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:strokeColor="@color/card_border"
+    app:strokeWidth="@dimen/stroke_width">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:background="@color/card">
+
+        <ImageView
+            android:id="@+id/iv_slika_popisne_liste"
+            android:layout_width="@dimen/pl_image_size"
+            android:layout_height="@dimen/pl_image_size"
+            android:background="@drawable/clipboard"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_popisna_lista"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textSize"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_opis_popisne_liste"
+            app:layout_constraintStart_toEndOf="@id/iv_slika_popisne_liste"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_popisna_lista_vise" />
+
+        <TextView
+            android:id="@+id/tv_opis_popisne_liste"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/default_textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_slika_popisne_liste"
+            app:layout_constraintTop_toBottomOf="@id/tv_popisna_lista"
+            app:layout_constraintEnd_toStartOf="@id/btn_popisna_lista_vise"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_popisna_lista_vise"
+            style="@style/CustomButtonVise"
+            android:text="@string/vise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

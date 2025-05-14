@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding"
+        tools:context=".ui.dodavanje.lokacija.DodajLokacijuFragment">
+
+        <EditText
+            android:id="@+id/et_naziv_grada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/naziv_grada"
+            android:inputType="text"
+            android:minHeight="@dimen/minHeight" />
+
+        <EditText
+            android:id="@+id/et_sirina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/unesite_sirinu"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginTop="@dimen/default_margin"
+            android:minHeight="@dimen/minHeight" />
+
+        <EditText
+            android:id="@+id/et_duzina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/unesite_duzinu"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginTop="@dimen/default_padding"
+            android:minHeight="@dimen/minHeight" />
+
+        <Button
+            android:id="@+id/btn_sacuvaj_lokaciju"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/minHeight"
+            style="@style/CustomButtonSacuvaj"
+            android:text="@string/sacuvaj"
+            android:layout_marginTop="@dimen/btn_marginTop" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

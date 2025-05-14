@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:strokeColor="@color/card_border"
+    app:strokeWidth="@dimen/stroke_width">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:background="@color/card">
+
+        <TextView
+            android:id="@+id/tv_stavka_naziv"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_textSize"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_stavka_barkod"/>
+
+        <TextView
+            android:id="@+id/tv_stavka_barkod"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_stavka_naziv" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stavka_vise"
+            style="@style/CustomButtonVise"
+            android:text="@string/vise"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+
+

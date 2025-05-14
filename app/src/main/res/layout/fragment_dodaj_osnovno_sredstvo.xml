@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <EditText
+            android:id="@+id/et_naziv_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/naziv_os"
+            android:inputType="text"
+            android:minHeight="@dimen/minHeight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_bigger" />
+
+        <EditText
+            android:id="@+id/et_opis_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/opis_os"
+            android:inputType="textMultiLine"
+            android:minHeight="@dimen/minHeight"
+            android:minLines="2"
+            app:layout_constraintTop_toBottomOf="@id/et_naziv_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <LinearLayout
+            android:id="@+id/ll_barkod"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/et_opis_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/et_barkod_os"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="wrap_content"
+                android:hint="@string/barkod_os"
+                android:inputType="number"
+                android:minHeight="@dimen/minHeight"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_skeniraj_barkod_os"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/minHeight"
+                style="@style/CustomButtonVise"
+                android:text="@string/skeniraj" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_cijena_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/cijena_os"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/minHeight"
+            app:layout_constraintTop_toBottomOf="@id/ll_barkod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <Spinner
+            android:id="@+id/spinner_zaposleni_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/minHeight"
+            app:layout_constraintTop_toBottomOf="@id/et_cijena_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <Spinner
+            android:id="@+id/spinner_lokacija_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/minHeight"
+            app:layout_constraintTop_toBottomOf="@id/spinner_zaposleni_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin" />
+
+        <ImageView
+            android:id="@+id/iv_slika_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/image_height"
+            app:layout_constraintTop_toBottomOf="@id/spinner_lokacija_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@drawable/border_background"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/ll_btns_slika"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/iv_slika_os"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/default_margin">
+
+            <Button
+                android:id="@+id/btn_odaberi_sliku_os"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/default_margin_half"
+                android:layout_weight="1"
+                style="@style/CustomButtonVise"
+                android:text="@string/odaberi_iz_galerije" />
+
+            <Button
+                android:id="@+id/btn_uslikaj_os"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/default_margin_half"
+                android:layout_weight="1"
+                style="@style/CustomButtonVise"
+                android:text="@string/uslikaj" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sacuvaj_os"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/minHeight"
+            android:text="@string/sacuvaj"
+            style="@style/CustomButtonSacuvaj"
+            app:layout_constraintTop_toBottomOf="@id/ll_btns_slika"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/btn_marginTop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

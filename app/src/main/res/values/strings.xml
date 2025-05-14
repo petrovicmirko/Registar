@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Registar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Registar</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Pretraži</string>
+    <string name="action_settings">Podešavanja</string>
+
+    <string name="menu_osnovna_sredstva">Osnovna sredstva</string>
+    <string name="menu_zaposleni">Zaposleni</string>
+    <string name="menu_lokacije">Lokacije</string>
+    <string name="menu_popisne_liste">Popisne liste</string>
+    <string name="menu_podesavanja">Podešavanja</string>
+
+    <string name="fragment_detalji_os">Detalji osnovnog sredstva</string>
+    <string name="fragment_mapa">Mapa</string>
+    <string name="fragment_stavke">Stavke</string>
+
+    <string name="odaberi_lokaciju">Odaberi lokaciju</string>
+    <string name="odaberi_zaposlenog">Odaberi zaposlenog</string>
+    <string name="odaberi_novu_lokaciju">Odaberi novu lokaciju</string>
+    <string name="odaberi_novog_zaposlenog">Odaberi novog zaposlenog</string>
+    <string name="odaberi_jezik">Odaberi jezik</string>
+    <string name="engleski">Engleski</string>
+    <string name="srpski">Srpski</string>
+    <string name="sacuvaj">Sačuvaj</string>
+    <string name="dobrodosli">Dobrodošli!</string>
+    <string name="vise">Više</string>
+    <string name="valuta">BAM</string>
+    <string name="odaberi_akciju">Odaberi akciju</string>
+    <string name="obrisi_akcija">Obriši</string>
+    <string name="azuriraj_akcija">Ažuriraj</string>
+    <string name="detalji_akcija">Detalji</string>
+    <string name="prikazi_akcija">Prikaži</string>
+    <string name="otkazi_akcija">Otkaži</string>
+    <string name="potvrda_brisanja">Potvrda brisanja</string>
+    <string name="potvrda_brisanja_pitanje">Jeste li sigurni?</string>
+    <string name="da">Da</string>
+    <string name="ne">Ne</string>
+    <string name="ok">Ok</string>
+    <string name="zatvori">Zatvori</string>
+    <string name="prikazi_na_mapi">Prikaži na mapi</string>
+    <string name="osnovna_sredstva">Osnovna sredstva</string>
+    <string name="nema_osnovnih_sredstava">Nema osnovnih sredstava</string>
+    <string name="barkod">barkod:</string>
+    <string name="zaduzena_osoba">zadužena osoba:</string>
+    <string name="naziv_os">Naziv</string>
+    <string name="opis_os">Opis</string>
+    <string name="barkod_os">Barkod</string>
+    <string name="cijena_os">Cijena</string>
+    <string name="skeniraj">Skeniraj</string>
+    <string name="odaberi_iz_galerije">Odaberi iz galerije</string>
+    <string name="uslikaj">Uslikaj</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="pozicija">Pozicija</string>
+    <string name="naziv_grada">Naziv grada</string>
+    <string name="unesite_sirinu">Unesite širinu (npr. 44.77215)</string>
+    <string name="unesite_duzinu">Unesite dužinu (npr. 17.19091)</string>
+    <string name="dodaj_novu_popisnu_listu">Dodaj novu popisnu listu</string>
+    <string name="azuriraj_popisnu_listu">Ažuriraj popisnu listu</string>
+    <string name="naziv_liste">Naziv liste *</string>
+    <string name="opis_liste">Opis (opciono)</string>
+    <string name="dodaj_osnovno_sredstvo">Dodaj osnovno sredstvo</string>
+    <string name="dodaj_zaposlenog">Dodaj zaposlenog</string>
+    <string name="dodaj_lokaciju">Dodaj lokaciju</string>
+    <string name="dodaj_popisnu_listu">Dodaj popisnu listu</string>
+    <string name="dodaj_stavku">Dodaj stavku</string>
+    <string name="nepoznato_os">Nepoznato osnovno sredstvo</string>
+    <string name="popunite_polja">Molimo popunite sva polja!</string>
+    <string name="sirina_uslov">Širina mora biti između -90 i 90</string>
+    <string name="duzina_uslov">Dužina mora biti između -180 i 180</string>
+    <string name="nevazeci_format">Nevažeći format</string>
+    <string name="sirina_duzina_uslov">Geografska širina i dužina moraju biti brojevi!</string>
+    <string name="odaberite_lokaciju">Molimo odaberite lokaciju!</string>
+    <string name="odaberite_zaposlenog">Molimo odaberite zaposlenog!</string>
+    <string name="barkod_uslov">Barkod mora biti broj!</string>
+    <string name="barkod_postoji">Barkod već postoji za drugo osnovno sredstvo!</string>
+    <string name="osnovno_sredstvo_postoji">Osnovno sredstvo sa ovim barkodom već postoji!</string>
+    <string name="dodaj_fotografiju_uslov">Morate dodati fotografiju!</string>
+    <string name="dodaj_fotografiju_greska">Greška pri spremanju fotografije!</string>
+    <string name="skeniraj_kod">Skeniraj kod</string>
+    <string name="odaberite_fotografiju">Odaberite fotografiju</string>
+    <string name="ucitavanje_fotografije_greska">Greška pri učitavanju fotografije!</string>
+    <string name="putanja_fotografije_greska">Putanja do fotografije nije postavljena!</string>
+    <string name="operacija_otkazana">Operacija otkazana!</string>
+    <string name="kamera_uslov">Dozvola za kameru je potrebna!</string>
+    <string name="uspjesno_obrisano">Uspješno obrisano!</string>
+    <string name="naziv_obavezan">Naziv je obavezan</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>
